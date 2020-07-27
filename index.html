@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <title>Debt App</title>
+</head>
+
+<body>
+    <div class = "container">
+<div class ="emergency_div">
+<p></p>Do you have an emergency fund?</p>
+<button class="emergency_fund1">Yes</button>
+<button class="emergency_fund">No</button>
+</div>
+
+<div class =" amount_in_emerg">
+<p>How much is in your Emergency Fund?</p>
+<input id="emergency_amount"></input>
+    <button id = "grab_emergency_amount">Submit</button>
+
+</div>
+
+<div class ="debt_listed">
+<p>List your debt from smallest to largest</p>
+<input id="debt_type" placeholder="Type"></input>
+<input id="monthly_debt_cost" placeholder="Monthly Payment"></input>
+<input id="owed" placeholder="How Much Owed"></input>
+<ul id = "debt_listed"></ul>
+
+<button id = "add_new_debt">+</button>
+<button id="addTotal_postInfo">Done</button>
+
+</div>
+
+<div class="bills_listed">
+    <p>List your normal expenses here</p>
+    <input id="expense_type" placeholder="Type"></input>
+    <input id="expense_amount" placeholder="Monthly Payment"></input>
+    <button id = "addExpenses">+</button>
+    <button id="CalculateExpenses">Submit</button>
+
+</div>
+<div class="monthly_net">
+    <p>How much do you net a month?</p>
+    <input id="net" placeholder="Monthly Net Income"></input>
+    <button id = "get_net">Submit</button>
+</div>
+
+</div>
+<script src = "index.js"></script>
+</body>
+</html>
